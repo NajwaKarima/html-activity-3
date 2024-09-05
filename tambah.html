@@ -5,13 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah</title>
     <style>
-
+        .container {
+            width: 275px;
+            margin-top: 10px;
+            border-collapse: collapse;
+            margin: auto;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        .input {
+            margin-bottom: 10px;
+            border-radius: 1%;
+        }
+        .form-input {
+            display: flex;
+            flex-direction: column;
+        } 
+        .btn {
+            margin-top: 15px;
+            margin-left: 200px;
+        }
     </style>
 </head>
 <body>
-    <h1>Tambah Barang</h1>
-    <div>
-        <label for="Nama"></label>
+    <div class="container">
+    <h1 align="center">Tambah Barang</h1>
+    <div class="form-input">
+        <label>Nama</label>
+        <input type="text" class="input">
     </div>
+    <div class="form-input">
+        <label>Kode Barang</label>
+        <input type="text" class="input">
+    </div>
+    <div class="form-input">
+        <label>Tanggal Masuk</label>
+        <input type="date" class="input">
+    </div>
+    <div class="form-input">
+        <label>Tanggal Expired</label>
+        <input type="date" class="input">
+    </div>
+    <div class="form-input">
+        <label>Jumlah Stok</label>
+        <input type="number" class="input">
+    </div>
+    <div class="form-input">
+        <label>Harga beli</label>
+        <input type="number" class="input">
+    </div>
+    <div class="form-input">
+        <label>Harga Jual</label>
+        <input type="number" class="input">
+    </div>
+    <button class="btn">Simpan</button>
 </body>
 </html>
